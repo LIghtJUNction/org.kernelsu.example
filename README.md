@@ -1,6 +1,6 @@
 # KernelSU Modules Repo Example
 
-[中文](README_CN.md) | **English**
+[中文](docs/README_CN.md) | **English**
 
 ---
 

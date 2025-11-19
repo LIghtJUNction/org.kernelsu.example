@@ -1,6 +1,6 @@
 # KernelSU 模块仓库示例
 
-**简体中文** | [English](README.md)
+**简体中文** | [English](../README.md)
 
 ---
 
