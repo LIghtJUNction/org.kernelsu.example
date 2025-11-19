@@ -1,0 +1,20 @@
+[
+	{
+		"type": "add",
+		"name": "tiann",
+		"link": "https://github.com/tiann"
+	},
+	{
+		"type": "add",
+		"name": "Ylarod",
+		"link": "https://github.com/Ylarod"
+	},
+	{
+		"type": "add",
+		"name": "KernelSUBot"
+	},
+	{
+		"type": "remove",
+		"name": "someoneInContributorsWillRemove"
+	}
+]
