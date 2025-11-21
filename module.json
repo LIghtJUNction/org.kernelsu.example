@@ -1,0 +1,24 @@
+{
+    "summary": "This file is a brief description of the module.\nIt will be displayed outside the list.\nNo formatting is supported.\n",
+    "sourceUrl": "https://github.com/KernelSU-Modules-Repo/org.kernelsu.example",
+    "additionalAuthors": [
+        {
+            "type": "add",
+            "name": "tiann",
+            "link": "https://github.com/tiann"
+        },
+        {
+            "type": "add",
+            "name": "Ylarod",
+            "link": "https://github.com/Ylarod"
+        },
+        {
+            "type": "add",
+            "name": "KernelSU-Bot"
+        },
+        {
+            "type": "remove",
+            "name": "someoneInContributorsWillRemove"
+        }
+    ]
+}

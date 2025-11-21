@@ -24,7 +24,7 @@
 
 ### 摘要
 
-`SUMMARY` 文件中的内容。
+`module.json` 文件中的 `summary` 字段。
 
 > 模块的简短描述,将显示在列表外部,不支持格式化。
 > 留空则使用完整描述的裁剪值作为摘要。
@@ -41,13 +41,13 @@
 
 ### 源代码链接
 
-`SOURCE_URL` 文件中的内容,所有换行符(\r 和 \n)将被移除。
+`module.json` 文件中的 `sourceUrl` 字段。
 
 > 如果您已发布源代码,请提供模块源代码的链接。
 
 ### 附加作者
 
-`ADDITIONAL_AUTHORS` 文件中的 JSON 内容。
+`module.json` 文件中的 `additionalAuthors` 字段。
 
 | 字段 | 类型 | 描述 | 是否可选 |
 | ---- | ---- | ---- | -------- |
@@ -55,31 +55,33 @@
 | `name` | String | 作者名称 | 否 |
 | `link` | String | 作者链接 | 是 |
 
-示例:
+`module.json` 中的示例:
 ```json
-[
-  {
-    "type": "add",
-    "name": "tiann",
-    "link": "https://github.com/tiann"
-  },
-  {
-    "type": "add",
-    "name": "Ylarod",
-    "link": "https://github.com/Ylarod"
-  },
-  {
-    "type": "add",
-    "name": "KernelSUBot"
-  },
-  {
-    "type": "remove",
-    "name": "someoneInContributorsWillRemove"
-  }
-]
+{
+  "additionalAuthors": [
+    {
+      "type": "add",
+      "name": "tiann",
+      "link": "https://github.com/tiann"
+    },
+    {
+      "type": "add",
+      "name": "Ylarod",
+      "link": "https://github.com/Ylarod"
+    },
+    {
+      "type": "add",
+      "name": "KernelSU-Bot"
+    },
+    {
+      "type": "remove",
+      "name": "someoneInContributorsWillRemove"
+    }
+  ]
+}
 ```
 
-> 如果您与他人共同开发模块,但他们没有 GitHub 账户,可以将他们的名字和链接写入此文件。
+> 如果您与他人共同开发模块,但他们没有 GitHub 账户,可以将他们的名字和链接写入 `module.json` 文件。
 > 仓库中的所有 `Outside Collaborators` 将默认被添加为作者。
 
 ### 可见性

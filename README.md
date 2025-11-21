@@ -24,7 +24,7 @@ The repository name.
 
 ### Summary
 
-Contents in `SUMMARY` file.
+The `summary` field in `module.json` file.
 
 > A brief description of the module, will be displayed outside the list, no formatting is supported.
 > Leave blank to use trimmed value of full text as the summary.
@@ -41,13 +41,13 @@ The Website of repository details.
 
 ### Source Code URL
 
-Contents in `SOURCE_URL` file, any line breaks (\r & \n) will disappear.
+The `sourceUrl` field in `module.json` file.
 
 > Link to the source code of your module if you published it.
 
 ### Additional Authors
 
-JSON in `ADDITIONAL_AUTHORS` file.
+The `additionalAuthors` field in `module.json` file.
 
 | Field | Type | Description | Optional |
 | ----- | ---- | ----------- | -------- |
@@ -55,31 +55,33 @@ JSON in `ADDITIONAL_AUTHORS` file.
 | `name` | String | The name of author | No |
 | `link` | String | The link of author | Yes |
 
-Example:
+Example in `module.json`:
 ```json
-[
-  {
-    "type": "add",
-    "name": "tiann",
-    "link": "https://github.com/tiann"
-  },
-  {
-    "type": "add",
-    "name": "Ylarod",
-    "link": "https://github.com/Ylarod"
-  },
-  {
-    "type": "add",
-    "name": "KernelSUBot"
-  },
-  {
-    "type": "remove",
-    "name": "someoneInContributorsWillRemove"
-  }
-]
+{
+  "additionalAuthors": [
+    {
+      "type": "add",
+      "name": "tiann",
+      "link": "https://github.com/tiann"
+    },
+    {
+      "type": "add",
+      "name": "Ylarod",
+      "link": "https://github.com/Ylarod"
+    },
+    {
+      "type": "add",
+      "name": "KernelSU-Bot"
+    },
+    {
+      "type": "remove",
+      "name": "someoneInContributorsWillRemove"
+    }
+  ]
+}
 ```
 
-> In case you have developed the module together with somebody else, but they don't have a GitHub account. You can write their names and links into the file.
+> In case you have developed the module together with somebody else, but they don't have a GitHub account. You can write their names and links into the `module.json` file.
 > All `Outside Collaborators` in this repository will be added by default.
 
 ### Visibility
