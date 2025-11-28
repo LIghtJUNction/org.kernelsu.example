@@ -10,6 +10,15 @@
 - Modules must be compliant with the law and must not act in malicious ways. The operator of this site will not take any responsibility (or give support) for uploaded modules.
 - Only default branches will be processed.
 
+## Module Release Requirements
+
+### Publishing Immutable Releases
+
+To enhance security, this organization has enabled the **Immutable Releases** feature. You will not be able to move or delete Git tags, or modify or delete release assets. Additionally, creating an immutable release automatically generates a release attestation, which is a cryptographically verifiable release record containing the release tag, commit SHA, and release assets.
+
+> [!NOTE]
+> Immutable releases include protection against repository resurrection attacks. Even if the repository is deleted and a new repository with the same name is created, tags associated with immutable releases from the original repository cannot be reused.
+
 ## Module Information
 
 ### Module Name *
@@ -88,27 +97,28 @@ Example in `module.json`:
 
 If you want to hide the module:
 - **Hide from repository**: Change repository to private in Repository Settings.
-- **Hide from website/manager only**: Create a `HIDE` file.
 
 ## Versions
 
 We use GitHub releases as a version update.
 
+Version Name and Version Code will be parsed from `module.prop` in the module within release assets.
+
 ### Version Name *
 
-The Release Title.
+The `version` field in `module.prop`.
 
 > This is the human-readable version number.
 
 ### Version Code *
 
-The Release Tag.
+The `versionCode` field in `module.prop`.
 
 > The technical version, used when checking for updates. Newer versions always need to have a higher number than previous versions.
 
 ### Release Type *
 
-`This is a pre-release` checkbox.
+Set via the `This is a pre-release` checkbox.
 
 | Type | GitHub Release Type |
 | ---- | ------------------- |
