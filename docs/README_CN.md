@@ -110,13 +110,10 @@ Release 标签(Release Tag)。
 
 通过 `This is a pre-release` 复选框设置。
 
-注意:Experimental 已与 Beta 合并。
-
 | 类型 | GitHub Release 类型 |
 | ---- | ------------------- |
 | Stable(稳定版,低风险) | Release |
 | Beta(测试版,可能有些 bug) | Pre-release |
-| Experimental(实验版,高风险) | Pre-release |
 
 > 用于分类此版本的风险等级。默认情况下,仅显示稳定版本。
 

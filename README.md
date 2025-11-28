@@ -110,13 +110,10 @@ The Release Tag.
 
 `This is a pre-release` checkbox.
 
-Note: Experimental has been merged with beta.
-
 | Type | GitHub Release Type |
 | ---- | ------------------- |
 | Stable (low risk of bugs) | Release |
 | Beta (some bugs to be expected) | Pre-release |
-| Experimental (high risk of bugs) | Pre-release |
 
 > Classification how risky it is for users to install this version. By default, only stable versions will be shown.
 
