@@ -48,7 +48,7 @@ The `summary` field in `module.json` file.
 
 Contents in `README.md` file.
 
-### Support/Discussion URL *
+### Homepage URL *
 
 The Website of repository details.
 

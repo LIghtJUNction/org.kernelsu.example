@@ -48,7 +48,7 @@
 
 `README.md` 文件中的内容。
 
-### 支持/讨论链接 *
+### 主页链接 *
 
 仓库的网站链接(Repository Website)。
 
