@@ -1,4 +1,5 @@
 {
+    "metamodule": false,
     "summary": "This file is a brief description of the module.\nIt will be displayed outside the list.\nNo formatting is supported.\n",
     "sourceUrl": "https://github.com/KernelSU-Modules-Repo/org.kernelsu.example",
     "additionalAuthors": [

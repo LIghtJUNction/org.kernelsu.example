@@ -31,6 +31,12 @@
 
 > 模块的唯一标识符 - 所有版本必须保持相同!
 
+### 元模块 *
+
+`module.json` 文件中的 `metamodule` 字段。
+
+> 如果这是一个元模块则设置为 `true`，否则设置为 `false`。
+
 ### 摘要
 
 `module.json` 文件中的 `summary` 字段。

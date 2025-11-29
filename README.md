@@ -31,6 +31,12 @@ The repository name.
 
 > The id of the module - has to be the same for all versions!
 
+### Meta Module *
+
+The `metamodule` field in `module.json` file.
+
+> Set to `true` if this is a metamodule, otherwise set to `false`.
+
 ### Summary
 
 The `summary` field in `module.json` file.
